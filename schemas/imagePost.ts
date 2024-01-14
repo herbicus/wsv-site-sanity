@@ -28,16 +28,4 @@ export default {
       title: 'Image',
     },
   ],
-  preview: {
-    select: {
-      title: 'title',
-      order: 'sortOrder',
-    },
-    prepare({title, order}: any) {
-      return {
-        title: title,
-        subtitle: `Sort Order: ${order}`,
-      }
-    },
-  },
 }
