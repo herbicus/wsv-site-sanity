@@ -1,15 +1,15 @@
-import {BsImages} from 'react-icons/bs'
+import {FaYoutube} from 'react-icons/fa'
 
 export default {
-  name: 'imagePost',
+  name: 'videoPost',
   type: 'document',
-  title: 'Images',
-  icon: BsImages,
+  title: 'Videos',
+  icon: FaYoutube,
   fields: [
     {
       name: 'title',
       type: 'string',
-      title: 'Image title',
+      title: 'Video title',
     },
     {
       name: 'sortOrder',
@@ -17,15 +17,23 @@ export default {
       title: 'Sort Order',
     },
     {
-      name: 'description',
-      title: 'Image description',
-      type: 'array',
-      of: [{type: 'block'}],
+      name: 'youTube',
+      title: 'YouTube Video',
+      type: 'url',
     },
     {
-      name: 'image',
-      type: 'image',
-      title: 'Image',
+      name: 'mp4',
+      title: 'MP4 Video',
+      type: 'file',
+      options: {
+        accept: 'video/mp4',
+      },
+    },
+    {
+      name: 'description',
+      title: 'Video description',
+      type: 'array',
+      of: [{type: 'block'}],
     },
   ],
   preview: {
