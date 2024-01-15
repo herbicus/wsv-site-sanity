@@ -30,6 +30,11 @@ export default {
       },
     },
     {
+      name: 'poster',
+      title: 'MP4 Video Poster',
+      type: 'image',
+    },
+    {
       name: 'description',
       title: 'Video description',
       type: 'array',
